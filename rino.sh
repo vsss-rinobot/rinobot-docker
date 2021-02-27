@@ -3,4 +3,4 @@ xhost +local:docker
 
 ## Buildando o docker
 # docker build . -f Dockerfile -t nomedodocker
-docker build . -f Dockerfile -t rino
+docker build . -f Dockerfile -t deirazo/rinoironcup
