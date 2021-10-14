@@ -19,4 +19,4 @@ ARG GIT_TOKEN
 WORKDIR /home
 RUN sudo apt-get install git    
 # Clonning repo
-RUN git clone  -b 5x5 https://github.com/rinobot-vision/rinoSimulator.git
+RUN git clone  -b main https://github.com/rinobot-vision/rinoSimulator.git
