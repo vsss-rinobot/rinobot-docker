@@ -12,11 +12,14 @@ RUN apt-get update && apt-get install -y \
     protobuf-compiler \
     && apt-get clean
 
-# Taking GIT_TOKEN arg
-ARG GIT_TOKEN
+ARG GITHUB_TOKEN
+ENV GITHUB_TOKEN=$GITHUB_TOKEN
 
 # Moving to workdir
 WORKDIR /home
 RUN sudo apt-get install git    
 # Clonning repo
-RUN git clone  -b 5x5 https://github.com/rinobot-vision/rinoSimulator.git
+
+
+RUN git config --global url."https://Rinobot VSSS:$GITHUB_TOKEN@github.com/".insteadOf "https://github.com/"
+RUN git clone  -b main https://github.com/vsss-rinobot/rinobot-firasim
