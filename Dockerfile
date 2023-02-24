@@ -18,8 +18,6 @@ ENV GITHUB_TOKEN=$GITHUB_TOKEN
 # Moving to workdir
 WORKDIR /home
 RUN sudo apt-get install git    
-# Clonning repo
 
 
-RUN git config --global url."https://Rinobot VSSS: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@github.com/".insteadOf "https://github.com/"
-RUN git clone  -b Libero https://github.com/vsss-rinobot/rinobot-firasim
+RUN git clone  -b Libero https://github.com/vsss-rinobot/rinobot-firasim.git
