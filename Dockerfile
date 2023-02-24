@@ -21,5 +21,5 @@ RUN sudo apt-get install git
 # Clonning repo
 
 
-RUN git config --global url."https://vsss-rinobot:rinobotCode2019@github.com/".insteadOf "https://github.com/"
+RUN git config --global url."https://vsss-rinobot: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@github.com/".insteadOf "https://github.com/"
 RUN git clone  -b Libero https://github.com/vsss-rinobot/rinobot-firasim
