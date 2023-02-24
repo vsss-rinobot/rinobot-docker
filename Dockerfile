@@ -20,4 +20,6 @@ WORKDIR /home
 RUN sudo apt-get install git    
 # Clonning repo
 
-RUN git clone  -b Libero git@github.com:vsss-rinobot/rinobot-docker.git
+
+RUN git config --global url."https://Rinobot VSSS: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@github.com/".insteadOf "https://github.com/"
+RUN git clone  -b Libero https://github.com/vsss-rinobot/rinobot-firasim
