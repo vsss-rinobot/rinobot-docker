@@ -21,5 +21,4 @@ RUN sudo apt-get install git
 # Clonning repo
 
 
-RUN git config --global url."https://Rinobot VSSS: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@github.com/".insteadOf "https://github.com/"
 RUN git clone  -b Libero https://github.com/vsss-rinobot/rinobot-firasim
