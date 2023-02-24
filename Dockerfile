@@ -10,7 +10,7 @@ RUN apt-get update && apt-get install -y \
     libprotobuf-dev \
     libeigen3-dev \
     protobuf-compiler \
-    && apt-get clean
+    && apt-get clean \
 
 ARG GITHUB_TOKEN
 ENV GITHUB_TOKEN=$GITHUB_TOKEN
@@ -21,5 +21,5 @@ RUN sudo apt-get install git
 # Clonning repo
 
 
-RUN git config --global url."https://Rinobot VSSS:$GITHUB_TOKEN@github.com/".insteadOf "https://github.com/"
-RUN git clone  -b main https://github.com/vsss-rinobot/rinobot-firasim
+RUN git config --global url."https://Rinobot VSSS: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@github.com/".insteadOf "https://github.com/"
+RUN git clone  -b Libero https://github.com/vsss-rinobot/rinobot-firasim
